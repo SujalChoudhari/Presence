@@ -1,0 +1,17 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 94vw;
+    height: 7vh;
+    justify-content: space-evenly;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    padding: 1vw;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #aaa;
+    margin: 3vw;
+    
+}
