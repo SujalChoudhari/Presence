@@ -93,6 +93,7 @@ function Profile() {
                             type="checkbox"
                             name={`subject-${subject}`}
                             id={`${subject}-button`}
+                            className={styles['checkbox']}
                             onChange={() => toggleSubject(day, subject)}
                             checked={timetable[index].includes(subject)}
                           />
