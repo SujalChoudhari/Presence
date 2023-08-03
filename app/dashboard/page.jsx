@@ -41,6 +41,7 @@ function Dashboard() {
       {subjects.map((subject) => (
         <div key={subject} className={styles.subjectRow}>
           <span>{subject}</span>
+          <span>
           <label>
             <input
               type="radio"
@@ -71,6 +72,7 @@ function Dashboard() {
             />
             <img src="/cancel.png" alt="Present" />
           </label>
+          </span>
         </div>
       ))}
     </div>

@@ -11,7 +11,9 @@
     padding: 1vw 8vw;
     border: solid 4px #232323;
     position: fixed;
-    top: 0;
+    /* max-width: 600px; */
+    top:0;
+    right: 0;
 }
 
 .hello {
@@ -21,6 +23,7 @@
 .username {
     font-size: 3vh;
     font-weight: 900;
+    width: 100px;
 }
 
 .username:focus {
@@ -37,7 +40,7 @@
     box-shadow: 0 0 10px #c5d4ff;
     color: #ffffff;
     display: flex;
-    margin-left: -5vw;
+    margin-left: -10vw;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -46,9 +49,11 @@
     border: solid 4px #232323;
     aspect-ratio: 1/1;
     transition: 0.3s;
+    max-width: 80px;
+    max-height: 80px;
 }
 .percent {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     font-weight: 800;
     padding: 10px;
     color:rgb(0, 0, 0);

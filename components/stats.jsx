@@ -32,7 +32,7 @@ function Stats() {
       if (attendance)
         setAttendance(Math.round(attendance));
       else
-        setAttendance(100);
+        setAttendance(0);
     }
   
   

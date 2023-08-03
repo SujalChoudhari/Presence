@@ -2,12 +2,14 @@
 .dashboard {
     font-family: Arial, sans-serif;
     padding: 20px;
-    margin: 10vw;
-    margin-top: 15vh;
+    margin: 8vw;
+
+    margin-top: 17vh;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px #fff;
     border: solid 4px #232323;
+
 }
 
 .date {
@@ -25,9 +27,13 @@
 }
 
 .subjectRow span {
-    margin-right: 5vh;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
+
 
 .subjectRow label {
     min-width: 15vw;

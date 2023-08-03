@@ -10,7 +10,8 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #a7d9ff 0%, #85fbff 100%);
+  background-color: #85fbff;
+  background-image: linear-gradient(to bottom right, #85fbff 0%, #5fffd2 50%,#85fbff 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

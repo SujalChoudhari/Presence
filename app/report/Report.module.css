@@ -35,8 +35,13 @@
     color: #000;
 }
 
-.subject-attendance {
+.attendance-container p {
+    font-size: 2vh;
+    font-weight: bolder;
+    /* color: #000000; */
+}
 
+.subject-attendance {
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: #333;
@@ -45,10 +50,10 @@
     align-items: center;
     width: 10vw;
     height: 10vw;
-}
-
-.attendance-container p {
-    font-size: 2vh;
-    font-weight: bolder;
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 50px;
+    min-height: 50px;
     color: #fff;
 }
+
