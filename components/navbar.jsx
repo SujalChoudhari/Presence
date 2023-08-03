@@ -9,7 +9,7 @@ function Navbar() {
     <>
       <div className={styles.container}>
         <div className={styles.button}>
-          <Link href="/dashboard">
+          <Link href="/">
             <Image className={styles.image} src="/home.png" alt="Dashboard" width={64} height={64} />
           </Link>
         </div>
