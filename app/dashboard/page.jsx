@@ -35,9 +35,6 @@ function Dashboard() {
   return (
     <div className={styles.dashboard}>
       <p className={styles.date}>{currentDate}</p>
-      <p>
-        <b>Today's Subjects</b>
-      </p>
       {subjects.map((subject) => (
         <div key={subject} className={styles.subjectRow}>
           <span>{subject}</span>
