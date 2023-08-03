@@ -1,0 +1,36 @@
+/* Dashboard.module.css */
+.dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 10vw;
+    margin-top: 15vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+.date {
+    font-size: 1.5vh;
+    font-weight: 900;
+}
+
+.subjectRow {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subjectRow span {
+    margin-right: 5vh;
+    font-weight: bolder;
+}
+
+.subjectRow label {
+    min-width: 15vw;
+}
+
+
+
+

@@ -3,27 +3,36 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react';
 import styles from './stats.module.css'
+import { getAveragePercentageforAll, getUserName, setUserName } from './database';
 
 function Stats() {
     const [username, setUsername] = useState('User');
     const [attendance, setAttendance] = useState(100);
   
     useEffect(() => {
-      const username = localStorage.getItem('username');
-      const attendance = localStorage.getItem('attendance');
+      const username = getUserName();
+      const attendance = getAveragePercentageforAll();
       if (username)
         setUsername(username);
       else
         setUsername('User');
       if (attendance)
-        setAttendance(attendance);
+        setAttendance(Math.round(attendance));
       else
         setAttendance(100);
     }, [])
   
     const usernameChangeHandler = (event) => {
       setUsername(event.target.value);
-      localStorage.setItem('username', event.target.value);
+      setUserName(event.target.value);
+    }
+
+    const refreshAttendance = () => {
+      const attendance = getAveragePercentageforAll();
+      if (attendance)
+        setAttendance(Math.round(attendance));
+      else
+        setAttendance(100);
     }
   
   
@@ -39,7 +48,7 @@ function Stats() {
             className={styles.username}
             value={username} />
         </div>
-        <div className={styles.attendance}>
+        <div onClick={refreshAttendance} className={styles.attendance}>
           <p className={styles.percent}> {attendance}% </p>
         </div>
       </header>

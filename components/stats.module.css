@@ -5,7 +5,7 @@
     width: 96vw;
     height: 10vh;
     border-radius: 20px;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 20px #666;
     background-color: #fff;
     margin: 2vw;
     padding: 1vw 8vw;
@@ -49,4 +49,5 @@
     font-size: 4vh;
     font-weight: 900;
     color:greenyellow;
+    filter: drop-shadow(0 0 8px #ada);
 }
