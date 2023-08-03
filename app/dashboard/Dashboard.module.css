@@ -6,19 +6,21 @@
     margin-top: 15vh;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 10px #fff;
+    border: solid 4px #232323;
 }
 
 .date {
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     font-weight: 900;
+    margin-bottom: 5vh;
 }
 
 .subjectRow {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 

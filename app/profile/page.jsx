@@ -5,16 +5,12 @@ import { getAllSubjects, getAttendanceForSubject, getAttendancePercentageForSubj
 
 function Profile() {
   const [subjects, setSubjects] = useState([]);
-  const [attendance, setAttendance] = useState([]);
-  const [percentage, setPercentages] = useState([]);
   const [activeCheckbox, setActiveCheckbox] = useState({}); // Fix the state variable name
 
   useEffect(() => {
     const localsubs = getAllSubjects();
     setSubjects(localsubs || []);
-    setAttendance(localsubs.map(sub => getAttendanceForSubject(sub) || [0, 0]));
-    setPercentages(localsubs.map(sub => getAttendancePercentageForSubject(sub) || 'N/A'));
-
+    
     localsubs.forEach(s => {
       const days = getDaysforSubject(s);
       if (days) {
@@ -49,23 +45,6 @@ function Profile() {
           onChange={subjectsChangeHandler}
           placeholder="Maths,English,Science"
         />
-      </div>
-      <div className={styles['attendance-container']}>
-        <p>Attendance <b>Report</b></p>
-        {subjects.map((subject, index) => {
-          if (!subject) return null; // Skip empty or undefined subjects
-          const [attended, total] = attendance[index] || [0, 0];
-          return (
-            <div key={index} className={styles['attendance-report']}>
-              <div className={styles['subject-name']}>
-                <h3>{subject} {`${attended}/${total}`}</h3>
-              </div>
-              <div className={styles['subject-attendance']}>
-                <p>{percentage[index]}%</p>
-              </div>
-            </div>
-          );
-        })}
       </div>
       <div className={styles['timetable-container']}>
         <p>Timetable</p>

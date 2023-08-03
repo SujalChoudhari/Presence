@@ -9,9 +9,11 @@
     align-items: center;
     flex-direction: column;
     width: 80vw;
-    height: 20vh;
+    min-height: 20vh;
     border-radius: 20px;
     background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    border: solid 4px #232323;
     margin: 10vw;
     padding: 1vw 8vw;
     margin-top: 15vh;
@@ -23,7 +25,7 @@
 }
 
 .subjects {
-    width: 80vw;
+    width: 78vw;
     height: 20vh;
     border-radius: 20px;
     padding: 20px;
@@ -35,54 +37,6 @@
     outline: none;
 }
 
-
-
-.attendance-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 80vw;
-    min-height: 20vh;
-    border-radius: 20px;
-    background-color: #fff;
-    margin: 10vw;
-    padding: 1vw 8vw;
-    margin-top: 5vh;
-}
-
-.attendance-container p {
-    margin-bottom: 2vh;
-}
-
-.attendance-report {
-    display: flex;
-    width: 70vw;
-    margin: 1vw;
-    align-self: center;
-    justify-content: space-between;
-}
-
-.subject-name {
-    margin: auto 0;
-    font-size: 2vh;
-    font-variant-numeric: diagonal-fractions;
-    font-weight: 600;
-    color: #000;
-}
-
-.subject-attendance {
-    font-size: 2vh;
-    font-weight: bolder;
-    color: #fff;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 1vh;
-    align-items: center;
-    background-color: #333;
-}
-
 .timetable-container {
     display: flex;
     align-items: center;
@@ -92,8 +46,10 @@
     min-height: 20vh;
     border-radius: 20px;
     background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
     margin: 10vw;
     padding: 1vw 8vw;
+    border: solid 4px #232323;
     margin-top: 5vh;
     padding-bottom: 2vh;
 }
@@ -105,7 +61,7 @@
 }
 
 .timetable-holder {
-    width: 80vw;
+    width: 78vw;
     min-height: 20vh;
     border-radius: 20px;
     display: flex;
@@ -133,9 +89,9 @@
     margin: 4vw;
     width: 70vw;
     min-height: 40vh;
-    background-color: #3332;
+    background-color: rgba(119, 173, 255, 0.338);
     border-radius: 20px;
-    box-shadow: 0 0 10px #0004;
+    box-shadow: 0 0 10px rgba(192, 198, 255, 0.722);
 }
 
 .timetable-day h3 {
@@ -161,7 +117,7 @@
     height: 10vh;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 0 40px #fffc;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;

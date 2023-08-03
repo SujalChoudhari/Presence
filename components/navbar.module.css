@@ -4,19 +4,23 @@
     display: flex;
     align-items: center;
     width: 50vw;
-    height: 5vh;
+    height: 10vh;
     justify-content: space-evenly;
     margin: 25vw;
     margin-bottom: 1vh;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 1vw;
-
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 10px #ffffff;
+    border: solid 4px #232323;
     
 }
 
 .container .image {
-    margin-bottom: 5vh;
-    filter: drop-shadow(0 0 5px #666);
+    transition: 0.2s;
+}
+
+.image:hover:active {
+    translate: 0 -2vh;
+    scale:1.3;
 }
